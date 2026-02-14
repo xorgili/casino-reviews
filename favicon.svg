@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c040"/>
+      <stop offset="100%" stop-color="#00d4aa"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#0d1117"/>
+  <!-- Chip ring -->
+  <circle cx="32" cy="32" r="26" stroke="url(#fg)" stroke-width="3" fill="none"/>
+  <circle cx="32" cy="32" r="20" stroke="url(#fg)" stroke-width="1.5" fill="none"/>
+  <!-- Chip notches -->
+  <rect x="30" y="4" width="4" height="8" rx="2" fill="#f0c040"/>
+  <rect x="30" y="52" width="4" height="8" rx="2" fill="#00d4aa"/>
+  <rect x="4" y="30" width="8" height="4" rx="2" fill="#f0c040"/>
+  <rect x="52" y="30" width="8" height="4" rx="2" fill="#00d4aa"/>
+  <!-- Checkmark -->
+  <polyline points="22,32 29,39 42,26" stroke="url(#fg)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
