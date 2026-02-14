@@ -1,0 +1,60 @@
+baseURL = "https://xorgili.github.io/casino-reviews/"
+languageCode = "de"
+defaultContentLanguage = "de"
+title = "Casino Reviews & Vergleich"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  description = "Ehrliche Casino Reviews, Vergleiche und Erfahrungsberichte"
+  author = "Casino Review Team"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowToc = true
+  TocOpen = false
+  defaultTheme = "auto"
+
+  [params.homeInfoParams]
+    Title = "Casino Reviews & Vergleich"
+    Content = "Unabhängige Reviews, Erfahrungsberichte und Vergleiche der besten Online Casinos. Alle Informationen basieren auf eigener Recherche."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:kontakt@example.com"
+
+[params.assets]
+  favicon = "/favicon.ico"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "reviews"
+    name = "Reviews"
+    url = "/reviews/"
+    weight = 10
+  [[menu.main]]
+    identifier = "vergleich"
+    name = "Vergleich"
+    url = "/vergleich/"
+    weight = 20
+  [[menu.main]]
+    identifier = "ratgeber"
+    name = "Ratgeber"
+    url = "/ratgeber/"
+    weight = 30
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
